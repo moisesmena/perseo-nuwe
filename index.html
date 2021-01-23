@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/e5f08e8b31.js" crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="styles/main.css" >
     <link rel="stylesheet" href="styles/navBar.css" >
     <link rel="stylesheet" href="styles/header.css" >
     <link rel="stylesheet" href="styles/footer.css" >
@@ -39,7 +39,7 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Job offers</a>
+                <a href="#job-Offers">Job offers</a>
             </li>
             <li>
               <a href="./pages/loginRegister.html">Candidates</a>
@@ -67,33 +67,45 @@
        <div class="header__background"></div>
     </header>
 
+    <section class="description">
+        <p><h3>PERSEO, with more than 20 years of experience connecting TIC professionals with companies looking for talent, will guide you along the process to guarantee your successfull search. Start now!:<h3></p>
+    </section>
+
     <section class="input">
+        <a name=#job-Offers></a>
         <div class="input__searcher">
+                
                 <div>
-                    <label for="searcher">I'm looking for a job of...</label>
+                    <label for="searcher"><h2>I'm looking for a job of...</h2></label>
                     <input type="text" name="searcher" placeholder="Job position, company or key word"></input>
                 </div>
 
                 <div>
-                    <label for="where">in...</label>
-                    <input type="text" name="where" placeholder="Barcelona..."></input>
+                    <label for="where"><h2>in...</h2></h2></label>
+                    <select>
+                    <option value="Choose">Choose a city...</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Madrid">Bilbao</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Madrid">Sevilla</option>
+                    </select>
+
+                    <button type="button">Search
+                    </button>
                 </div>
 
-                <button type="button">Search
-                </button>
+
         </div>
+
+            <hr>
             
         <div class="input__interaction">
                 <div>    
-                    <label for="newsletter">Subscribe to our newsletter</label>
+                    <label for="newsletter"><h2>Subscribe to our newsletter</h2></label>
                     <input type="text" name="newsletter" placeholder="email"></input>
+                    <button type="button">Send
+                    </button>
                 </div>
-
-                <button type="button">Search
-                </button>
-               
-                <span>Share PERSEO
-                </span>
         </div>
 
     </section>
@@ -102,7 +114,7 @@
         <div class="container">
             <div class="sec aboutus">
                 <h2>About us</h2>
-                <p>With more than 20 years of experience, PERSEO works to unite companies in the TIC sector with the best candidates in the market, what are you waiting to register?</p>
+                <p>With more than 20 years of experience, PERSEO works to unite companies in the TIC sector with the best candidates in the market; what are you waiting for? Register now!</p>
                 <ul class="aboutus__icons">
                     <li><a href=""><i class="fa fa-facebook"></i></a></li>
                     <li><a href=""><i class="fa fa-twitter"></i></a></li>
