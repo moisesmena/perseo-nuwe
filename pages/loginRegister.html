@@ -3,25 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Perseo</title>
 
-    <title>Input Label Slide Up On Hover</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    
+    <script
+      src="https://kit.fontawesome.com/e5f08e8b31.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link rel="stylesheet" href="../styles/navBar.css" />
+    <link rel="stylesheet" href="../styles/loginRegister.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
 
   <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html"<h1>PERSEO</h1></a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Job offers</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
     <section class="user">
       <div class="user_options-container">
         <div class="user_options-text">
           <div class="user_options-unregistered">
             <h2 class="user_unregistered-title">Don't have an account?</h2>
             <p class="user_unregistered-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              sunt expedita! Reiciendis ratione soluta tempora numquam!
-              Consequuntur.
+              If you are a <b>candidate</b>, register and complete your CV to be seen by recruiteers. <br>
+              If you are
+              a <b>company</b> complete your registration to find the best candidate.
             </p>
             <button class="user_unregistered-signup" id="signup-button">
               Sign up
@@ -31,8 +60,7 @@
           <div class="user_options-registered">
             <h2 class="user_registered-title">Have an account?</h2>
             <p class="user_registered-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis in
-              laboriosam adipisci. Facilis laudantium adipisci illo!
+              Happy to see you again!<br>Login in PERSEO and enjoy the best recruitment experience
             </p>
             <button class="user_registered-login" id="login-button">
               Login
@@ -82,6 +110,15 @@
                   <input type="password" class="forms_field-input" required />
                   <label class="forms_field-label">Password</label>
                 </div>
+                <div class="forms_field">
+                  <select class="forms_field-input" required />
+                  <option value="Candidate">Candidate</option>
+                  <option value="Recruiter">Recruiter</option>
+                  </select>
+                  <label class="forms_field-label">Are you Recruiter or Candidate?</label>
+                </div>
+
+
               </fieldset>
               <div class="forms_buttons">
                 <input
@@ -95,37 +132,72 @@
         </div>
       </div>
     </section>
-    <script>
-      /**
-       * Variables
-       */
-      const signupButton = document.getElementById("signup-button"),
-        loginButton = document.getElementById("login-button"),
-        userForms = document.getElementById("user_options-forms");
 
-      /**
-       * Add event listener to the "Sign Up" button
-       */
-      signupButton.addEventListener(
-        "click",
-        () => {
-          userForms.classList.remove("bounceRight");
-          userForms.classList.add("bounceLeft");
-        },
-        false
-      );
+    <footer>
+      <div class="container">
+        <div class="sec aboutus">
+          <h2>About us</h2>
+          <p>
+            With more than 20 years of experience, PERSEO works to unite
+            companies in the TIC sector with the best candidates in the market,
+            what are you waiting to register?
+          </p>
+          <ul class="aboutus__icons">
+            <li>
+              <a href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-youtube-play"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quickLinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms & Consitions</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa fa-map-marker"></i></span>
+              <span
+                >Avda. Diagonal 345,<br />
+                Barcelona</span
+              >
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i></span>
+              <p>
+                <a href="tel:932345678">932345678</a><br />
+                <a href="tel:012345678">012345678</a>
+              </p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i></span>
+              <p><a href="mailto:info@perseo.com">info@perseo.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Copyright © 2021 Perseo. All Rights Reserved.</p>
+    </div>
 
-      /**
-       * Add event listener to the "Login" button
-       */
-      loginButton.addEventListener(
-        "click",
-        () => {
-          userForms.classList.remove("bounceLeft");
-          userForms.classList.add("bounceRight");
-        },
-        false
-      );
-    </script>
+    <script src="../scripts/loginRegister.js"></script>
+    <script src="../scripts/navBar.js"></script>
   </body>
 </html>
